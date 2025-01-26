@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+    {% block content %}
+        {% for post in posts%}
+        <h1>{{post.author}}</h1>
+        <p>Born on {{post.dob}}</p>
+        {% endfor %}
+    {% endblock content%}
+
+    {% block dusracontent %}
+        {% for post in posts%}
+        <h3 style="color: aqua;">dusra content</h3>
+        <p>Born on {{post.dob}}</p>
+        {% endfor %}
+    {% endblock dusracontent %}
